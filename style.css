@@ -1,0 +1,166 @@
+/* Reset básico e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #0a2540;
+    line-height: 1.6;
+    padding-bottom: 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background: linear-gradient(135deg, #0a2540 0%, #0d2d50 100%);
+    color: #ffd000;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #f0f0f0;
+}
+
+/* Navegação */
+nav {
+    background-color: #ffd000;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #0a2540;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #0a2540;
+    color: #ffd000;
+    transform: translateY(-2px);
+}
+
+/* Seções de conteúdo */
+section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+h2 {
+    color: #0a2540;
+    border-left: 8px solid #ffd000;
+    padding-left: 15px;
+    margin: 30px 0 20px;
+    font-size: 2rem;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    padding: 30px;
+    margin: 25px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eaeaea;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Listas */
+ul {
+    padding-left: 25px;
+    margin: 20px 0;
+}
+
+ul li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+strong {
+    color: #0a2540;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0a2540;
+    color: #ffd000;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 8px 10px;
+        font-size: 1rem;
+    }
+    
+    section {
+        padding: 0 15px;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+}

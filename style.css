@@ -115,6 +115,22 @@ strong {
     color: #0a2540;
 }
 
+/* Tamanhos de Imagens */ 
+.section-image {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+}
+
+.icons {
+    width: 10px;
+    max-width: 50px;
+    display: block;
+
+}
+
 /* Rodapé */
 footer {
     background-color: #0a2540;
@@ -163,11 +179,4 @@ footer {
     header h1 {
         font-size: 1.8rem;
     }
-}
-.section-image {
-    width: 100%;
-    max-width: 900px;
-    display: block;
-    margin: 25px auto;
-    border-radius: 12px;
 }

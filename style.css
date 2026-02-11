@@ -143,6 +143,17 @@ footer {
     font-size: 1rem;
 }
 
+h3 {
+    margin-top: 20px;
+    color: #0a2540;
+}
+
+h4 {
+    margin-top: 15px;
+    color: #0d2d50;
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     header h1 {
@@ -181,4 +192,78 @@ footer {
     header h1 {
         font-size: 1.8rem;
     }
+}
+
+/* Media para Colocar A Melhor Responsividade no Celular */
+@media (max-width: 768px) {
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        margin: 6px 8px;
+        font-size: 0.95rem;
+        padding: 6px 10px;
+    }
+
+    .icons {
+        width: 20px;
+    }
+
+    .icons-text {
+        width: 35px;
+    }
+}
+
+
+/* Para Celulares com Coluna */
+@media (max-width: 480px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 90%;
+        margin: 6px 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+
+    section {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        padding-left: 10px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    ul li {
+        font-size: 0.95rem;
+    }
+
 }

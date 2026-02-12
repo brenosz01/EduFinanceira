@@ -208,34 +208,49 @@ h4 {
 /* ================= MENU RESPONSIVO HORIZONTAL ================= */
 
 /* ================= RESPONSIVIDADE ================= */
-
 @media (max-width: 768px) {
 
     header h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     header p {
-        font-size: 1rem;
+        font-size: 0.95rem;
         padding: 0 10px;
     }
 
-    /* MENU HORIZONTAL */
+    /* MENU EM UMA LINHA COM SCROLL */
     nav {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 5px;
+        flex-wrap: nowrap;          /* impede quebra */
+        overflow-x: auto;           /* ativa scroll horizontal */
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 10px;
+        scrollbar-width: none;      /* remove scroll no Firefox */
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;              /* remove scroll no Chrome */
     }
 
     nav a {
+        flex: 0 0 auto;             /* impede encolhimento */
         display: inline-flex;
         align-items: center;
-        justify-content: center;
         gap: 6px;
-        margin: 6px 8px;
+        margin: 0;                  /* remove margem grande */
         font-size: 0.9rem;
-        padding: 6px 8px;
+        padding: 6px 10px;
+        white-space: nowrap;        /* impede quebra de texto */
+    }
+
+    .icons {
+        width: 18px;
+    }
+
+    .icons-text {
+        width: 30px;
     }
 
     section {
@@ -249,13 +264,6 @@ h4 {
     .card {
         padding: 20px;
     }
-
-    .icons {
-        width: 18px;
-    }
-
-    .icons-text {
-        width: 30px;
-    }
 }
+
 

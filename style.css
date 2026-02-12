@@ -203,6 +203,44 @@ h4 {
     }
 }
 
+/* ================= LOGO NO MENU ================= */
+
+.logo-menu {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo-menu img {
+    height: 45px;
+}
+
+/* ================= MASCOTES FINAL ================= */
+
+.mascotes {
+    text-align: center;
+    margin: 60px auto 20px;
+    padding: 20px;
+}
+
+.mascotes img {
+    max-width: 100%;
+    width: 500px;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 768px) {
+
+    .logo-menu img {
+        height: 35px;
+    }
+
+    .mascotes img {
+        width: 90%;
+    }
+}
+
 
 /* Celular */
 /* ================= MENU RESPONSIVO HORIZONTAL ================= */

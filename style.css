@@ -205,38 +205,57 @@ h4 {
 
 
 /* Celular */
-@media (max-width: 480px) {
+/* ================= MENU RESPONSIVO HORIZONTAL ================= */
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+/* ================= RESPONSIVIDADE ================= */
 
-    nav a {
-        width: 90%;
-        margin: 6px 0;
-    }
+@media (max-width: 768px) {
 
     header h1 {
-        font-size: 1.7rem;
+        font-size: 2.2rem;
     }
 
     header p {
-        font-size: 0.95rem;
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    /* MENU HORIZONTAL */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 5px;
+    }
+
+    nav a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        margin: 6px 8px;
+        font-size: 0.9rem;
+        padding: 6px 8px;
+    }
+
+    section {
+        padding: 0 15px;
     }
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .card {
-        padding: 18px;
+        padding: 20px;
     }
 
-    p,
-    ul li {
-        font-size: 0.95rem;
+    .icons {
+        width: 18px;
     }
 
+    .icons-text {
+        width: 30px;
+    }
 }
+
